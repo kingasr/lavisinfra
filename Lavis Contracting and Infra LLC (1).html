@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lavis Contracting and Infra LLC</title>
+<meta name="description" content="Lavis Contracting and Infra LLC — contracting and infrastructure in the Sultanate of Oman.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080909'/%3E%3Cpath d='M16 4 28 16 16 28 4 16Z M16 10 22 16 16 22 10 16Z' fill='none' stroke='%23C6A76A' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@500;600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Noto+Kufi+Arabic:wght@600;800&display=swap">
+<style>
+:root{--ob:#080909;--cb:#111211;--gr:#1B1C19;--gold:#C6A76A;--ig:#D9BC7A;--br:#8F7040;--iv:#F4F0E7;--st:#AAA69C;--line:rgba(198,167,106,.22);--pad:clamp(20px,5vw,72px);--safe-t:env(safe-area-inset-top,0px);--safe-b:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;height:100%}
+body{background:var(--ob);color:var(--iv);font:400 17px/1.7 Inter,system-ui,sans-serif;padding-bottom:var(--safe-b);-webkit-font-smoothing:antialiased}
+[dir=rtl] body{font-family:"IBM Plex Sans Arabic",Inter,sans-serif}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:-.04em;line-height:1.05}
+[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3{font-family:"Noto Kufi Arabic",sans-serif;letter-spacing:0;line-height:1.3}
+.mono{font:400 12px/1.4 "IBM Plex Mono",monospace;letter-spacing:.12em;color:var(--gold);text-transform:uppercase}
+[dir=rtl] .mono{letter-spacing:0;font-family:"IBM Plex Sans Arabic"}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ig);outline-offset:3px}
+.wrap{padding:clamp(72px,11vw,150px) var(--pad)}
+.ivory{background:var(--iv);color:var(--ob)}.ivory .mono{color:var(--br)}.ivory p{color:#3a3832}
+h2{font-size:clamp(34px,5.4vw,76px);max-width:16ch;margin:18px 0 28px}
+p{max-width:62ch;color:var(--st)}
+.btn{display:inline-block;padding:15px 28px;border:1px solid var(--gold);color:var(--ig);font:600 14px Manrope,sans-serif;cursor:pointer;background:none;transition:background .25s,color .25s}
+.btn:hover,.btn.fill{background:var(--gold);color:var(--ob)}.btn.fill:hover{background:var(--ig)}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;gap:28px;padding:calc(16px + var(--safe-t)) var(--pad) 16px;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.solid{background:var(--ob);border-color:var(--line)}
+.logo{display:flex;align-items:center;gap:12px;margin-inline-end:auto}
+.logo b{display:block;font:700 20px "Space Grotesk";letter-spacing:.28em}.logo small{display:block;font:400 8.5px "IBM Plex Mono";letter-spacing:.2em;color:var(--gold)}
+[dir=rtl] .logo b,[dir=rtl] .logo small{letter-spacing:0}
+.links{display:flex;gap:26px;font:500 14px Manrope}[dir=rtl] .links{font-family:"IBM Plex Sans Arabic"}
+.links a{padding:6px 0;border-bottom:1px solid transparent}.links a.on,.links a:hover{border-color:var(--gold)}
+.lang{display:flex;gap:2px;font:500 13px Manrope}.lang button{background:none;border:0;color:var(--st);padding:6px 8px;cursor:pointer;font:inherit}.lang button[aria-pressed=true]{color:var(--ig);border-bottom:1px solid var(--gold)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--iv);width:44px;height:44px;cursor:pointer}
+@media(max-width:1020px){.burger{display:block}.cta-nav{display:none}.links{position:fixed;inset:0;background:var(--ob);flex-direction:column;justify-content:center;align-items:center;gap:22px;font-size:26px;opacity:0;visibility:hidden;transition:.35s;z-index:-1}.links.open{opacity:1;visibility:visible}}
+/* hero */
+.hero{min-height:100svh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:140px var(--pad) 72px;overflow:hidden;background:radial-gradient(120% 80% at 75% 20%,#1d1b15,var(--ob) 60%)}
+.hero svg.topo{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
+.topo path{fill:none;stroke:var(--gold);stroke-width:1;stroke-opacity:.2;stroke-dasharray:1800;stroke-dashoffset:1800;animation:draw 3.2s ease-out forwards}
+.topo path:nth-child(2){animation-delay:.3s}.topo path:nth-child(3){animation-delay:.6s}.topo path:nth-child(4){animation-delay:.9s}.topo path:nth-child(5){animation-delay:1.2s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:96px 96px;opacity:.25;mask-image:linear-gradient(to bottom,transparent,#000 60%)}
+.hero>*:not(svg):not(.grid){position:relative}
+.hero h1{font-size:clamp(46px,9.6vw,150px);margin:20px 0 28px;max-width:11ch}
+.hero .ar{font:800 clamp(20px,2.6vw,34px) "Noto Kufi Arabic";color:var(--ig);margin:6px 0 30px}
+.hero p{font-size:19px;color:#cfcabd}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+/* split / lists */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+.plate{aspect-ratio:4/5;border:1px solid var(--line);position:relative;background:linear-gradient(160deg,var(--gr),var(--ob));display:grid;place-items:center;overflow:hidden}
+.plate svg{width:80%;opacity:.8}.plate .mono{position:absolute;inset:auto 16px 14px 16px}
+.exp{border-top:1px solid var(--line);margin-top:40px}
+.exp details{border-bottom:1px solid var(--line)}
+.exp summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:70px 1fr 28px;align-items:center;padding:26px 0;font:700 clamp(20px,2.6vw,34px) "Space Grotesk";letter-spacing:-.03em;transition:color .2s}
+[dir=rtl] .exp summary{font-family:"Noto Kufi Arabic";letter-spacing:0;font-size:clamp(18px,2.2vw,28px)}
+.exp summary::-webkit-details-marker{display:none}.exp summary:hover{color:var(--ig)}
+.exp summary::after{content:"+";color:var(--gold);font-weight:400;transition:transform .25s}.exp details[open] summary::after{transform:rotate(45deg)}
+.exp details p{padding:0 70px 28px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0}
+.filters button{background:none;border:1px solid var(--line);color:var(--st);padding:9px 16px;font:500 13px Manrope;cursor:pointer}
+.filters button[aria-pressed=true]{border-color:var(--gold);color:var(--ig)}
+.empty{border:1px dashed var(--line);padding:56px 28px;text-align:center}.empty p{margin:12px auto 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:50px;border-top:1px solid var(--line)}
+.steps div{padding:22px 18px 22px 0;border-bottom:1px solid var(--line);font:600 15px Manrope}
+@media(max-width:820px){.steps{grid-template-columns:repeat(2,1fr)}}
+.vals{columns:2;column-gap:60px;margin-top:40px;list-style:none;padding:0}
+.vals li{padding:14px 0;border-bottom:1px solid rgba(8,9,9,.18);font:600 17px Manrope;break-inside:avoid}
+@media(max-width:700px){.vals{columns:1}}
+.inter{padding:clamp(90px,14vw,190px) var(--pad);text-align:center;background:var(--cb);border-block:1px solid var(--line)}
+.inter .big{font:800 clamp(30px,6vw,84px)/1.3 "Noto Kufi Arabic";color:var(--ig)}
+.note{border-inline-start:2px solid var(--gold);padding:6px 18px;font-size:15px;margin-top:26px}
+/* form */
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px;max-width:900px}
+form .full{grid-column:1/-1}@media(max-width:700px){form{grid-template-columns:1fr}}
+label{display:block;font:500 13px Manrope;color:var(--st);margin-bottom:6px}
+input,select,textarea{width:100%;background:var(--cb);border:1px solid var(--line);color:var(--iv);padding:14px;font:inherit;font-size:16px;border-radius:0}
+.err{color:#e8a08a;font-size:13px;min-height:18px;margin-top:4px}
+input[aria-invalid=true],select[aria-invalid=true],textarea[aria-invalid=true]{border-color:#e8a08a}
+.chk{display:flex;gap:12px;align-items:flex-start}.chk input{width:20px;margin-top:4px}
+.ok{display:none;border:1px solid var(--gold);padding:30px;max-width:900px;margin-top:40px}
+footer{background:var(--ob);border-top:1px solid var(--line);padding:70px var(--pad) calc(36px + var(--safe-b))}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:50px}@media(max-width:700px){.fgrid{grid-template-columns:1fr}}
+footer a{display:block;color:var(--st);padding:4px 0;font-size:15px}footer a:hover{color:var(--ig)}
+.farab{font:600 20px "Noto Kufi Arabic";color:var(--ig);margin-top:20px}
+.sm{font-size:13px;color:var(--st);border-top:1px solid var(--line);padding-top:22px}
+::selection{background:var(--gold);color:var(--ob)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+#prog{position:fixed;top:0;left:0;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--br),var(--ig));z-index:30}
+[dir=rtl] #prog{left:auto;right:0;transform-origin:100% 50%}
+nav.solid{background:rgba(8,9,9,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.star{position:absolute;width:min(78vw,820px);aspect-ratio:1;inset-inline-end:-14%;top:6%;animation:spin 200s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.star *{fill:none;stroke:var(--gold);stroke-opacity:.2;stroke-width:.35}
+.hl{display:block;overflow:hidden;padding-bottom:.06em}.hl span{display:block;transform:translateY(105%);animation:up 1.2s cubic-bezier(.2,.8,.2,1) .2s forwards}
+.hl+.hl span{animation-delay:.4s}
+@keyframes up{to{transform:none}}
+.meta{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font:400 11px "IBM Plex Mono",monospace;letter-spacing:.14em;color:var(--st);text-transform:uppercase}
+[dir=rtl] .meta{letter-spacing:0;font-family:"IBM Plex Sans Arabic"}
+.wrap{position:relative}
+.wrap:not(.ivory)::before{content:"";position:absolute;top:0;left:var(--pad);right:var(--pad);height:1px;background:linear-gradient(90deg,var(--gold),transparent 70%)}
+[dir=rtl] .wrap:not(.ivory)::before{background:linear-gradient(270deg,var(--gold),transparent 70%)}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);transform:translateX(-120%);transition:transform .7s}
+.btn:hover::after{transform:translateX(120%)}
+.exp details{transition:background .35s}
+.exp details:hover{background:linear-gradient(90deg,rgba(198,167,106,.08),transparent)}
+[dir=rtl] .exp details:hover{background:linear-gradient(270deg,rgba(198,167,106,.08),transparent)}
+.exp summary span:nth-child(2){transition:transform .35s}
+.exp summary:hover span:nth-child(2){transform:translateX(10px)}
+[dir=rtl] .exp summary:hover span:nth-child(2){transform:translateX(-10px)}
+.plate{background:radial-gradient(70% 50% at 50% 35%,rgba(198,167,106,.18),transparent),linear-gradient(160deg,var(--gr),var(--ob))}
+.plate::before{content:"";position:absolute;inset:14px;border:1px solid var(--line)}
+.inter{background:radial-gradient(60% 70% at 50% 50%,var(--cb) 28%,transparent 100%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' fill='none' stroke='%23C6A76A' stroke-opacity='.16'%3E%3Cpath d='M40 0 80 40 40 80 0 40Z'/%3E%3Cpath d='M20 20h40v40H20Z'/%3E%3C/svg%3E") var(--cb)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.topo path{stroke-dashoffset:0}.hl span,.rv{transform:none;opacity:1}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+<nav id="nav" aria-label="Main">
+ <a href="#top" class="logo" aria-label="Lavis">
+  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" stroke="#C6A76A" stroke-width="1.5" aria-hidden="true"><path d="M19 2 36 19 19 36 2 19Z"/><path d="M19 10 28 19 19 28 10 19Z"/><path d="M19 2v34M2 19h34" stroke-opacity=".4"/></svg>
+  <span><b>LAVIS</b><small data-i="logo">CONTRACTING AND INFRA LLC</small></span></a>
+ <div class="links" id="links">
+  <a href="#about" data-i="n1">About Us</a><a href="#expertise" data-i="n2">Our Expertise</a><a href="#projects" data-i="n3">Projects</a><a href="#sustain" data-i="n4">Sustainability</a><a href="#careers" data-i="n5">Careers</a><a href="#contact" data-i="n6">Contact</a>
+ </div>
+ <div class="lang" role="group" aria-label="Language"><button data-l="en" aria-pressed="true">EN</button><button data-l="ar" aria-pressed="false" lang="ar">العربية</button></div>
+ <a href="#contact" class="btn cta-nav" data-i="cta">Discuss a Project</a>
+ <button class="burger" id="burger" aria-expanded="false" aria-controls="links" aria-label="Menu">☰</button>
+</nav>
+
+<header class="hero" id="top">
+ <svg class="topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path d="M600 700C700 600 820 640 900 540S1100 420 1220 460"/><path d="M560 760C680 640 800 700 900 600S1120 500 1240 520"/><path d="M500 800C660 680 780 760 920 660S1140 580 1260 590"/><path d="M700 560C760 480 840 500 900 420S1040 330 1200 360"/><path d="M780 480C820 420 880 430 930 360S1040 270 1200 290"/>
+ </svg>
+ <div class="grid"></div>
+ <svg class="star" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="70"/><rect x="30" y="30" width="140" height="140"/><rect x="30" y="30" width="140" height="140" transform="rotate(45 100 100)"/><rect x="52" y="52" width="96" height="96"/><rect x="52" y="52" width="96" height="96" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="30"/></svg>
+ <div class="mono" data-i="eyebrow">Sultanate of Oman · Contracting &amp; Infrastructure</div>
+ <h1><span class="hl"><span data-i="h1a">ENGINEERING</span></span><span class="hl"><span data-i="h1b">WHAT COMES NEXT.</span></span></h1>
+ <div class="ar" lang="ar" dir="rtl">نبني اليوم، لنصنع مستقبل الغد</div>
+ <p data-i="hp">Lavis Contracting and Infra LLC brings together engineering discipline, construction expertise, and a commitment to delivering infrastructure built for lasting value.</p>
+ <div class="ctas"><a class="btn fill" href="#expertise" data-i="c1">Explore Our Capabilities</a><a class="btn" href="#projects" data-i="c2">Discover Our Projects</a></div>
+ <div class="meta"><span>23.5880° N · 58.3829° E</span><span data-i="mt">Muscat · Sultanate of Oman</span><span data-i="sc">Scroll</span></div>
+</header>
+
+<section class="wrap ivory" id="about"><div class="split">
+ <div><div class="mono" data-i="a0">Who we are</div><h2 data-i="a1">A partner in progress. A foundation for the future.</h2>
+ <p data-i="a2">Lavis Contracting and Infra LLC is positioned to support the evolving infrastructure and development needs of the Sultanate of Oman through a disciplined approach to contracting, engineering, and project delivery.</p><br>
+ <p data-i="a3">Our philosophy centres on quality, accountability, collaboration, and the long-term value of the built environment. Every project is approached with technical rigour, operational discipline, and respect for the communities it serves.</p></div>
+ <div class="plate" role="img" aria-label="Placeholder for architectural photograph"><svg viewBox="0 0 200 200" fill="none" stroke="#C6A76A" stroke-width=".8"><path d="M100 10 190 100 100 190 10 100Z"/><path d="M100 40 160 100 100 160 40 100Z"/><path d="M100 70 130 100 100 130 70 100Z"/><path d="M10 100h180M100 10v180" stroke-opacity=".4"/><circle cx="100" cy="100" r="62" stroke-opacity=".4"/></svg><span class="mono" data-i="ph">Replace with approved project photography</span></div>
+</div></section>
+
+<section class="wrap" id="expertise">
+ <div class="mono" data-i="e0">Our expertise</div><h2 data-i="e1">Capabilities, subject to company confirmation.</h2>
+ <p data-i="e2">Services shown below are proposed categories and will be published only once Lavis verifies them.</p>
+ <div class="exp" id="exp"></div>
+</section>
+
+<section class="wrap ivory" id="projects">
+ <div class="mono" data-i="p0">Portfolio</div><h2 data-i="p1">Engineered to endure.</h2>
+ <p data-i="p2">Every project represents a commitment to precision, coordination, and lasting performance.</p>
+ <div class="filters" role="group" aria-label="Filters" id="filters"></div>
+ <div class="empty"><h3 style="font-size:26px" data-i="p3">Projects will appear here.</h3><p data-i="p4">No verified projects have been supplied yet. Add title, location, sector, scope, status and approved photography to publish each one. No sample contracts are shown.</p></div>
+</section>
+
+<section class="wrap" id="detail">
+ <div class="mono" data-i="d0">Method</div><h2 data-i="d1">Precision in every detail.</h2>
+ <div class="steps" id="steps"></div>
+</section>
+
+<section class="wrap ivory" id="quality">
+ <div class="mono" data-i="q0">Governance</div><h2 data-i="q1">Built on discipline. Defined by responsibility.</h2>
+ <ul class="vals" id="vals"></ul>
+ <div class="note" data-i="q2">Registrations, certifications and licences will be displayed only after supporting documents are supplied and verified.</div>
+</section>
+
+<section class="inter" aria-label="Oman"><div class="big" lang="ar" dir="rtl">عُمان — أرض الطموح والإنجاز</div><p class="mono" style="margin:22px auto 0" data-i="oi">Oman — a land of ambition and achievement</p></section>
+
+<section class="wrap" id="sustain">
+ <div class="mono" data-i="s0">Sustainability</div><h2 data-i="s1">Progress that respects place.</h2>
+ <p data-i="s2">Durable infrastructure, responsible resource management, efficient construction, environmental awareness, community-conscious development and long-term asset performance, set within the national context of Oman Vision 2040. No official endorsement or partnership is implied.</p>
+</section>
+
+<section class="wrap ivory" id="careers">
+ <div class="mono" data-i="r0">Careers</div><h2 data-i="r1">Build what matters.</h2>
+ <p data-i="r2">Engineering, project and site roles will be listed here as vacancies open. Until then, introduce yourself through the enquiry form and choose the Careers category.</p><br><a class="btn" href="#contact" data-i="r3">Contact the team</a>
+</section>
+
+<section class="wrap" id="contact">
+ <div class="mono" data-i="k0">Contact</div><h2 data-i="k1">Let's build something that lasts.</h2>
+ <p data-i="k2">Have an infrastructure requirement, contracting opportunity, or potential partnership? Connect with the Lavis team to begin a conversation.</p>
+ <form id="f" novalidate>
+  <div><label for="fn" data-i="f1">Full name</label><input id="fn" required autocomplete="name"><div class="err"></div></div>
+  <div><label for="fo" data-i="f2">Company or organisation</label><input id="fo" autocomplete="organization"><div class="err"></div></div>
+  <div><label for="fe" data-i="f3">Business email</label><input id="fe" type="email" required autocomplete="email"><div class="err"></div></div>
+  <div><label for="fp" data-i="f4">Phone with country code</label><input id="fp" type="tel" autocomplete="tel" placeholder="+968"><div class="err"></div></div>
+  <div><label for="fc" data-i="f5">Enquiry category</label><select id="fc" required></select><div class="err"></div></div>
+  <div><label for="fl" data-i="f6">Project location</label><input id="fl"><div class="err"></div></div>
+  <div class="full"><label for="fm" data-i="f7">Message</label><textarea id="fm" rows="5" required></textarea><div class="err"></div></div>
+  <div class="full chk"><input type="checkbox" id="fk" required><label for="fk" style="margin:0" data-i="f8">I consent to Lavis contacting me about this enquiry.</label></div><div class="err full" id="ek"></div>
+  <div class="full"><button class="btn fill" type="submit" data-i="f9">Send enquiry</button></div>
+ </form>
+ <div class="ok" id="ok" role="status" tabindex="-1"><h3 style="font-size:28px" data-i="o1">Enquiry checked.</h3><p data-i="o2">This preview validates the form but has no server connected, so nothing was sent. Connect an email service before launch.</p></div>
+</section>
+
+<footer>
+ <div class="fgrid"><div><b style="font:700 22px 'Space Grotesk';letter-spacing:.28em">LAVIS</b><p style="margin-top:12px" data-i="ft">Contracting and infrastructure in the Sultanate of Oman. Built on Trust. Engineered for Generations.</p><div class="farab" lang="ar" dir="rtl">الجودة في التنفيذ، والثقة في كل خطوة</div></div>
+ <div><div class="mono" data-i="fn">Navigate</div><a href="#about" data-i="n1">About Us</a><a href="#expertise" data-i="n2">Our Expertise</a><a href="#projects" data-i="n3">Projects</a><a href="#contact" data-i="n6">Contact</a></div>
+ <div><div class="mono" data-i="fx">Details</div><p style="font-size:15px" data-i="fd">Address, phone, email and office hours will be added once verified.</p></div></div>
+ <div class="sm">© <span id="yr"></span> Lavis Contracting and Infra LLC. <span data-i="rt">All rights reserved. Privacy Policy and Terms of Use to be supplied.</span></div>
+</footer>
+
+<script>
+const T={
+en:{logo:"CONTRACTING AND INFRA LLC",n1:"About Us",n2:"Our Expertise",n3:"Projects",n4:"Sustainability",n5:"Careers",n6:"Contact",cta:"Discuss a Project",
+eyebrow:"Sultanate of Oman · Contracting & Infrastructure",h1a:"ENGINEERING",h1b:"WHAT COMES NEXT.",mt:"Muscat · Sultanate of Oman",sc:"Scroll",hp:"Lavis Contracting and Infra LLC brings together engineering discipline, construction expertise, and a commitment to delivering infrastructure built for lasting value.",c1:"Explore Our Capabilities",c2:"Discover Our Projects",
+a0:"Who we are",a1:"A partner in progress. A foundation for the future.",a2:"Lavis Contracting and Infra LLC is positioned to support the evolving infrastructure and development needs of the Sultanate of Oman through a disciplined approach to contracting, engineering, and project delivery.",a3:"Our philosophy centres on quality, accountability, collaboration, and the long-term value of the built environment. Every project is approached with technical rigour, operational discipline, and respect for the communities it serves.",ph:"Replace with approved project photography",
+e0:"Our expertise",e1:"Capabilities, subject to company confirmation.",e2:"Services shown below are proposed categories and will be published only once Lavis verifies them.",
+p0:"Portfolio",p1:"Engineered to endure.",p2:"Every project represents a commitment to precision, coordination, and lasting performance.",p3:"Projects will appear here.",p4:"No verified projects have been supplied yet. Add title, location, sector, scope, status and approved photography to publish each one. No sample contracts are shown.",
+d0:"Method",d1:"Precision in every detail.",q0:"Governance",q1:"Built on discipline. Defined by responsibility.",q2:"Registrations, certifications and licences will be displayed only after supporting documents are supplied and verified.",
+oi:"Oman — a land of ambition and achievement",s0:"Sustainability",s1:"Progress that respects place.",s2:"Durable infrastructure, responsible resource management, efficient construction, environmental awareness, community-conscious development and long-term asset performance, set within the national context of Oman Vision 2040. No official endorsement or partnership is implied.",
+r0:"Careers",r1:"Build what matters.",r2:"Engineering, project and site roles will be listed here as vacancies open. Until then, introduce yourself through the enquiry form and choose the Careers category.",r3:"Contact the team",
+k0:"Contact",k1:"Let's build something that lasts.",k2:"Have an infrastructure requirement, contracting opportunity, or potential partnership? Connect with the Lavis team to begin a conversation.",
+f1:"Full name",f2:"Company or organisation",f3:"Business email",f4:"Phone with country code",f5:"Enquiry category",f6:"Project location",f7:"Message",f8:"I consent to Lavis contacting me about this enquiry.",f9:"Send enquiry",
+o1:"Enquiry checked.",o2:"This preview validates the form but has no server connected, so nothing was sent. Connect an email service before launch.",
+ft:"Contracting and infrastructure in the Sultanate of Oman. Built on Trust. Engineered for Generations.",fn:"Navigate",fx:"Details",fd:"Address, phone, email and office hours will be added once verified.",rt:"All rights reserved. Privacy Policy and Terms of Use to be supplied.",
+exp:[["Civil Engineering & General Contracting","Civil works and general contracting, delivered with disciplined planning and coordination."],["Roads, Highways & Transportation","Road and transport infrastructure from formation through to finishing."],["Drainage, Stormwater & Water","Drainage and water infrastructure designed for long-term performance."],["Rehabilitation & Maintenance","Renewal and upkeep of existing infrastructure assets."],["Commercial & Industrial Construction","Buildings and facilities for commercial and industrial clients."],["Site Development, Earthworks & Paving","Preparing and shaping sites for the works that follow."],["Project Management & Coordination","Coordination of programme, stakeholders and site delivery."],["Associated Infrastructure Works","Supporting works that complete a project."]],
+cats:["General Contracting","Infrastructure Projects","Commercial & Industrial Works","Partnerships","Procurement","Careers","Other"],filt:["All Projects","Roads & Highways","Civil Infrastructure","Drainage & Water","Commercial & Industrial","Other Verified Projects"],
+steps:["Surveying & site preparation","Earthworks & grading","Structural works","Road formation & paving","Drainage & utilities","Site coordination","Quality inspection","Handover & maintenance"],
+vals:["Quality-focused execution","Health and safety awareness","Regulatory compliance","Environmental responsibility","Transparent communication","Supplier and stakeholder coordination","Continuous improvement"],
+req:"This field is required.",mail:"Enter a valid email address.",chk:"Consent is required to send the enquiry.",pick:"Choose a category."},
+ar:{logo:"للمقاولات والبنية التحتية ش.م.م",n1:"من نحن",n2:"خبراتنا",n3:"المشاريع",n4:"الاستدامة",n5:"الوظائف",n6:"تواصل معنا",cta:"ناقش مشروعك",
+eyebrow:"سلطنة عُمان · المقاولات والبنية التحتية",h1a:"نهندس",h1b:"ما هو قادم.",mt:"مسقط · سلطنة عُمان",sc:"مرّر",hp:"تجمع لافيس للمقاولات والبنية التحتية بين الانضباط الهندسي وخبرة الإنشاء والالتزام بتسليم بنية تحتية تدوم قيمتها.",c1:"استكشف قدراتنا",c2:"اكتشف مشاريعنا",
+a0:"من نحن",a1:"شريك في التقدم. أساس للمستقبل.",a2:"تتهيأ لافيس للمقاولات والبنية التحتية لدعم احتياجات سلطنة عُمان المتنامية في البنية التحتية والتطوير، عبر نهج منضبط في المقاولات والهندسة وتنفيذ المشاريع.",a3:"تقوم فلسفتنا على الجودة والمسؤولية والتعاون والقيمة طويلة الأمد للبيئة المبنية. نتعامل مع كل مشروع بدقة تقنية وانضباط تشغيلي واحترام للمجتمعات التي نخدمها.",ph:"يُستبدل بصور المشاريع المعتمدة",
+e0:"خبراتنا",e1:"القدرات، بانتظار تأكيد الشركة.",e2:"الخدمات أدناه فئات مقترحة ولن تُنشر إلا بعد تحقق لافيس منها.",
+p0:"الأعمال",p1:"هندسة تدوم.",p2:"كل مشروع يعكس التزامًا بالدقة والتنسيق والأداء الدائم.",p3:"ستظهر المشاريع هنا.",p4:"لم تُقدَّم مشاريع موثقة بعد. أضف العنوان والموقع والقطاع والنطاق والحالة والصور المعتمدة لنشر كل مشروع. لا تُعرض عقود تجريبية.",
+d0:"المنهجية",d1:"الدقة في كل تفصيل.",q0:"الحوكمة",q1:"مبنية على الانضباط. محددة بالمسؤولية.",q2:"لن تُعرض التسجيلات والشهادات والتراخيص إلا بعد تقديم المستندات الداعمة والتحقق منها.",
+oi:"عُمان — أرض الطموح والإنجاز",s0:"الاستدامة",s1:"تقدم يحترم المكان",s2:"بنية تحتية متينة، وإدارة مسؤولة للموارد، وإنشاء فعّال، ووعي بيئي، وتنمية تراعي المجتمع، وأداء طويل الأمد للأصول، ضمن السياق الوطني لرؤية عُمان 2040. ولا يُقصد أي تأييد رسمي أو شراكة.",
+r0:"الوظائف",r1:"ابنِ ما يهم.",r2:"ستُدرج هنا الوظائف الهندسية والمشاريع والمواقع عند توفرها. وإلى ذلك الحين عرّف بنفسك عبر نموذج الاستفسار واختر فئة الوظائف.",r3:"تواصل مع الفريق",
+k0:"تواصل معنا",k1:"لنبنِ معًا ما يدوم.",k2:"هل لديك متطلب بنية تحتية أو فرصة مقاولات أو شراكة محتملة؟ تواصل مع فريق لافيس لبدء الحوار.",
+f1:"الاسم الكامل",f2:"الشركة أو الجهة",f3:"البريد الإلكتروني للعمل",f4:"الهاتف مع رمز الدولة",f5:"فئة الاستفسار",f6:"موقع المشروع",f7:"الرسالة",f8:"أوافق على تواصل لافيس معي بشأن هذا الاستفسار.",f9:"إرسال الاستفسار",
+o1:"تم فحص الاستفسار.",o2:"هذه نسخة معاينة تتحقق من النموذج دون خادم متصل، لذلك لم يُرسل شيء. اربط خدمة بريد قبل الإطلاق.",
+ft:"مقاولات وبنية تحتية في سلطنة عُمان. بنيت على الثقة. صُمّمت لأجيال.",fn:"التنقل",fx:"التفاصيل",fd:"سيُضاف العنوان والهاتف والبريد وساعات العمل بعد التحقق منها.",rt:"جميع الحقوق محفوظة. ستُقدَّم سياسة الخصوصية وشروط الاستخدام.",
+exp:[["الهندسة المدنية والمقاولات العامة","أعمال مدنية ومقاولات عامة بتخطيط وتنسيق منضبطين."],["الطرق والبنية التحتية للنقل","بنية الطرق والنقل من التشكيل حتى التشطيب."],["الصرف والأمطار والمياه","بنية الصرف والمياه مصممة لأداء طويل الأمد."],["التأهيل والصيانة","تجديد أصول البنية التحتية القائمة والعناية بها."],["الإنشاءات التجارية والصناعية","مبانٍ ومنشآت للعملاء التجاريين والصناعيين."],["تطوير المواقع والأعمال الترابية والرصف","تهيئة المواقع وتشكيلها للأعمال اللاحقة."],["إدارة المشاريع والتنسيق","تنسيق البرنامج الزمني وأصحاب المصلحة وتنفيذ الموقع."],["أعمال البنية التحتية المرتبطة","أعمال داعمة تكمل المشروع."]],
+cats:["المقاولات العامة","مشاريع البنية التحتية","الأعمال التجارية والصناعية","الشراكات","المشتريات","الوظائف","أخرى"],filt:["كل المشاريع","الطرق والسريعة","البنية التحتية المدنية","الصرف والمياه","التجاري والصناعي","مشاريع موثقة أخرى"],
+steps:["المسح وتجهيز الموقع","الأعمال الترابية والتسوية","الأعمال الإنشائية","تشكيل الطرق والرصف","الصرف والمرافق","تنسيق الموقع","فحص الجودة","التسليم والصيانة"],
+vals:["تنفيذ يركز على الجودة","الوعي بالصحة والسلامة","الامتثال التنظيمي","المسؤولية البيئية","التواصل الشفاف","تنسيق الموردين وأصحاب المصلحة","التحسين المستمر"],
+req:"هذا الحقل مطلوب.",mail:"أدخل بريدًا إلكترونيًا صحيحًا.",chk:"الموافقة مطلوبة لإرسال الاستفسار.",pick:"اختر فئة."}};
+let L=localStorage.getItem("lavis-lang")||"en";
+try{L=localStorage.getItem("lavis-lang")||"en"}catch(e){}
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+function render(l){
+ L=l;const t=T[l],ar=l==="ar";
+ document.documentElement.lang=l;document.documentElement.dir=ar?"rtl":"ltr";
+ document.title=ar?"لافيس للمقاولات والبنية التحتية":"Lavis Contracting and Infra LLC";
+ $$("[data-i]").forEach(e=>{if(t[e.dataset.i]!=null)e.textContent=t[e.dataset.i]});
+ $$("[data-l]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l));
+ $("#exp").innerHTML=t.exp.map((x,i)=>`<details><summary><span class="mono">${ar?"":"C"}${String(i+1).padStart(2,"0")}</span><span>${x[0]}</span></summary><p>${x[1]}</p></details>`).join("");
+ $("#filters").innerHTML=t.filt.map((x,i)=>`<button aria-pressed="${i===0}">${x}</button>`).join("");
+ $("#steps").innerHTML=t.steps.map(x=>`<div>${x}</div>`).join("");
+ $("#vals").innerHTML=t.vals.map(x=>`<li>${x}</li>`).join("");
+ $("#fc").innerHTML=`<option value="">—</option>`+t.cats.map(x=>`<option>${x}</option>`).join("");
+ $$(".err").forEach(e=>e.textContent="");$("#ok").style.display="none";
+ try{localStorage.setItem("lavis-lang",l)}catch(e){}
+}
+$$("[data-l]").forEach(b=>b.onclick=()=>render(b.dataset.l));
+$("#filters").onclick=e=>{if(e.target.tagName==="BUTTON")$$("#filters button").forEach(b=>b.setAttribute("aria-pressed",b===e.target))};
+const nav=$("#nav"),links=$("#links"),bg=$("#burger");
+addEventListener("scroll",()=>nav.classList.toggle("solid",scrollY>40),{passive:true});
+bg.onclick=()=>{const o=links.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+links.onclick=e=>{if(e.target.tagName==="A"){links.classList.remove("open");bg.setAttribute("aria-expanded",false)}};
+const secs=$$("main,section[id]");
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"}).observe&&secs.forEach(s=>0);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)$$(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(s=>io.observe(s));
+$("#f").onsubmit=e=>{
+ e.preventDefault();const t=T[L];let bad=null;
+ const chk=(el,msg)=>{const er=el.parentNode.querySelector(".err");er.textContent=msg||"";el.setAttribute("aria-invalid",!!msg);if(msg&&!bad)bad=el};
+ chk($("#fn"),$("#fn").value.trim()?"":t.req);
+ const m=$("#fe").value.trim();chk($("#fe"),!m?t.req:/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)?"":t.mail);
+ chk($("#fc"),$("#fc").value?"":t.pick);chk($("#fm"),$("#fm").value.trim()?"":t.req);
+ $("#ek").textContent=$("#fk").checked?"":t.chk;if(!$("#fk").checked&&!bad)bad=$("#fk");
+ if(bad){bad.focus();return}
+ e.target.reset();const o=$("#ok");o.style.display="block";o.focus();
+};
+$("#yr").textContent=new Date().getFullYear();
+render(L);
+const pg=$("#prog"),st=$(".star"),tp=$(".topo");
+addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;pg.style.transform=`scaleX(${h>0?scrollY/h:0})`;if(scrollY<innerHeight){st.style.translate=`0 ${scrollY*.18}px`;tp.style.translate=`0 ${scrollY*.08}px`}},{passive:true});
+const rv=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");rv.unobserve(e.target)}}),{threshold:.15});
+$$("h2,.plate,.steps div").forEach(e=>{e.classList.add("rv");rv.observe(e)});
+</script>
+</body>
+</html>
